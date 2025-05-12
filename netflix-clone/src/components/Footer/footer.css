@@ -1,5 +1,5 @@
 .footer_outer_container{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     background-color: #111;
     color: grey;
     display: flex;
@@ -7,13 +7,13 @@
 }
 
 .footer_inner_container{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 60%;
     /* background-color: red; */
 }
 
 .footer_icons{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     width: 12%;
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@
     align-items: center;
     justify-content: center;
     border: #fff 1px solid;
-    width: 10%;
+    width: 15%;
     margin: 10px 0;
     cursor: pointer;
 }
