@@ -5,17 +5,35 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
-
-import './header.css'
+// import './header.js'
+// import './header.css'
+import './header_responsive.css'
 
 const Header = () => {
+
+  function toggleMenu() {
+    const header_container = document.querySelector(".header_container");
+    header_container.classList.toggle("active");
+  }
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector(".header_container");
+    if (header.classList.contains("active")) {
+      header.classList.remove("active");
+    }
+  });
+
   return (
     <div className="header_outer_container">
       <div className="header_container">
+
+
+        <img className='none' src={NetflixLogo} alt="Netflix Logo " />
+
+
         <div className="header_left">
           <ul>
             <li>
-              <img src={NetflixLogo} alt="Netflix Logo" width="100" />
+              <img src={NetflixLogo} alt="Netflix Logo" />
             </li>
             <li>Home</li>
             <li>TV Shows</li>
@@ -26,6 +44,8 @@ const Header = () => {
             <li>Browse by Languages</li>
           </ul>
         </div>
+
+
         <div className="header_right">
           <ul>
             <li>
@@ -42,6 +62,14 @@ const Header = () => {
             </li>
           </ul>
         </div>
+
+        <button class="menu_toggle" onClick={toggleMenu}>
+          ☰
+        </button>
+
+
+
+
       </div>
     </div>
   );

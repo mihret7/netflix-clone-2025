@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(20, 20, 20);
     background-color: transparent;
     height: 10vh;
     color: white;
@@ -14,9 +13,7 @@
     /* background-color: red; */
 }
 
-.nav__black{
-    background-color: rgb(20, 20, 20)
-}
+
 
 .header_container{
     width: 90%;
@@ -44,3 +41,11 @@
     width: 15%;
     /* border: 2px solid red; */
 }
+
+img {
+    width: 100px;
+    /* border: 2px solid red; */
+}
+
+
+

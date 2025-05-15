@@ -9,8 +9,10 @@ const Footer = () => {
   return (
     <div className="footer_outer_container">
       <div className="footer_inner_container">
+
+
         <div className="footer_icons">
-          <FacebookOutlinedIcon fontSize="medium" sx={{ color: "white" }} />
+          <FacebookOutlinedIcon fontSize="medium" />
           <InstagramIcon fontSize="medium" />
           <XIcon fontSize="medium" />
           <YouTubeIcon fontSize="medium" />
@@ -54,7 +56,13 @@ const Footer = () => {
           <p>Service Code</p>
         </div>
 
-        <div className="copy_right">&copy; 1997-2024 Netflix, Inc.</div>
+        <div className="copy_right">
+          &copy; 1997-2024 Netflix, Inc.
+        </div>
+
+
+
+
       </div>
     </div>
   );
